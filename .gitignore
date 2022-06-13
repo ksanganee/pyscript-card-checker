@@ -1,0 +1,6 @@
+examples/
+docs/
+pyscriptjs/
+PYSCRIPT_README.md
+setup.cfg
+.DS_Store

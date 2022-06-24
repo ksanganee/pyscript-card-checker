@@ -14,14 +14,43 @@
 			input2element = Element("input2")
 			input3element = Element("input3")
 			input4element = Element("input4")
+			input5element = Element("input5")
+			input6element = Element("input6")
+			input7element = Element("input7")
+			input8element = Element("input8")
+			input9element = Element("input9")
+			input10element = Element("input10")
+			input11element = Element("input11")
+			input12element = Element("input12")
+			input13element = Element("input13")
+			input14element = Element("input14")
+			input15element = Element("input15")
 
+			def sum_digits(number):
+				number_string = str(number)
+				total = 0
+				for letter in number_string:
+					total += int(letter)
+				return total
 
 			def calculate_func(*ags, **kws):
 				val1 = int(input1element.element.value)
-				val2 = int(input2element.element.value)
+				val2 = sum_digits(2 * int(input2element.element.value))
 				val3 = int(input3element.element.value)
-				val4 = int(input4element.element.value)
-				pyscript.write("outputBox", str(val1 + val2 + val3 + val4))
+				val4 = sum_digits(2 * int(input4element.element.value))
+				val5 = int(input5element.element.value)
+				val6 = sum_digits(2 * int(input6element.element.value))
+				val7 = int(input7element.element.value)
+				val8 = sum_digits(2 * int(input8element.element.value))
+				val9 = int(input9element.element.value)
+				val10 = sum_digits(2 * int(input10element.element.value))
+				val11 = int(input11element.element.value)
+				val12 = sum_digits(2 * int(input12element.element.value))
+				val13 = int(input13element.element.value)
+				val14 = sum_digits(2 * int(input14element.element.value))
+				val15 = int(input15element.element.value)
+				result = 10 - ((val1 + val2 + val3 + val4 + val5 + val6 + val7 + val8 + val9 + val10 + val11 + val12 + val13 + val14 + val15) % 10)
+				pyscript.write("outputBox", result)
 
 		</py-script>
 		<h1>Card number validator page</h1>
@@ -42,7 +71,51 @@
 				<label for="input4">Card number 4</label>
 				<input id="input4" class="border" type="text">
 			</div>
-			<button id="calculateButton" class="p-2 text-white bg-blue-600 border border-blue-600 rounded" type="submit" pys-onClick="calculate_func">
+			<div>
+				<label for="input5">Card number 5</label>
+				<input id="input5" class="border" type="text">
+			</div>
+			<div>
+				<label for="input6">Card number 6</label>
+				<input id="input6" class="border" type="text">
+			</div>
+			<div>
+				<label for="input7">Card number 7</label>
+				<input id="input7" class="border" type="text">
+			</div>
+			<div>
+				<label for="input8">Card number 8</label>
+				<input id="input8" class="border" type="text">
+			</div>
+			<div>
+				<label for="input9">Card number 9</label>
+				<input id="input9" class="border" type="text">
+			</div>
+			<div>
+				<label for="input10">Card number 10</label>
+				<input id="input10" class="border" type="text">
+			</div>
+			<div>
+				<label for="input11">Card number 11</label>
+				<input id="input11" class="border" type="text">
+			</div>
+			<div>
+				<label for="input12">Card number 12</label>
+				<input id="input12" class="border" type="text">
+			</div>
+			<div>
+				<label for="input13">Card number 13</label>
+				<input id="input13" class="border" type="text">
+			</div>
+			<div>
+				<label for="input14">Card number 14</label>
+				<input id="input14" class="border" type="text">
+			</div>
+			<div>
+				<label for="input15">Card number 15</label>
+				<input id="input15" class="border" type="text">
+			</div>
+			<button id="calculateButton" class="p-1 text-white bg-blue-600 border border-blue-600 rounded" type="submit" pys-onClick="calculate_func">
 				Calculate
 			</button>
 			<h4 id="outputBox">

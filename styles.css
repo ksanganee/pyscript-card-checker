@@ -11,6 +11,37 @@ body {
 	width: 50%;
 }
 
+.container {
+	position: relative;
+	text-align: center;
+}
+
+.wrapper {
+	display: flex;
+    flex-wrap: wrap;
+	position: absolute;
+	top: 76%;
+	left: 42%;
+	transform: translate(-50%, -50%);
+}
+
+#outputBox {
+	text-emphasis: bold;
+	position: absolute;
+	top: 40%;
+	left: 57%;
+	transform: translate(-50%, -50%);
+	font-family: 'Orbitron', sans-serif;
+	color: #F5F5F5;
+	font-size: 22px;
+}
+
 input {
 	font-family: 'Orbitron', sans-serif;
+	font-size: 20px;
+	margin-right: 4px;
+	background-color: rgba(0,0,0,0);
+	color: #F5F5F5;
+	border: none;
+	text-align: center;
 }

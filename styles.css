@@ -2,13 +2,15 @@
 
 body {
 	background-color: #F5F5F5;
+	text-align: center;
 }
 
-.centre {
+#cardImage {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
+	margin-top: 40px;
 }
 
 .container {
@@ -16,7 +18,7 @@ body {
 	text-align: center;
 }
 
-.wrapper {
+#inputsWrapper {
 	display: flex;
     flex-wrap: wrap;
 	position: absolute;
@@ -28,12 +30,13 @@ body {
 #outputBox {
 	text-emphasis: bold;
 	position: absolute;
-	top: 40%;
+	top: 45%;
 	left: 57%;
 	transform: translate(-50%, -50%);
 	font-family: 'Orbitron', sans-serif;
 	color: #F5F5F5;
 	font-size: 22px;
+	margin-top: 1px;
 }
 
 input {
@@ -44,4 +47,10 @@ input {
 	color: #F5F5F5;
 	border: none;
 	text-align: center;
+}
+
+#calculateButton {
+	margin-top: 50px;
+	padding: 10px;
+	font-size: 20px;
 }
